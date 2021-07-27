@@ -9,9 +9,11 @@ const Users = [
 
 const UserType = new GraphQLObjectType({
   name: "User",
-  id: { type: GraphQLString },
-  firstName: { type: GraphQLString },
-  age: { type: GraphQLInt },
+  fields: {
+    id: { type: GraphQLString },
+    firstName: { type: GraphQLString },
+    age: { type: GraphQLInt },
+  },
 });
 
 const RootQuery = new GraphQLObjectType({
@@ -23,7 +25,7 @@ const RootQuery = new GraphQLObjectType({
         id: { type: GraphQLString },
       },
       resolve(parentValue, args) {
-        return Users.find((d) => d.id === args.id);
+        return _.find(Users, { id: args.id });
       },
     },
   },
