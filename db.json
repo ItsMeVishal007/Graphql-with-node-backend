@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "firstName": "Vishal",
-      "age": "20",
-      "companyId": "1"
-    },
-    {
-      "id": "2",
-      "firstName": "Raghav",
-      "age": "21",
-      "companyId": "2"
-    },
-    {
       "id": "3",
       "firstName": "Lalit",
       "age": "22",
@@ -33,7 +21,12 @@
     {
       "firstName": "Bheem",
       "age": "77",
-      "id": "giEX0VT"
+      "id": "SULHkVh"
+    },
+    {
+      "firstName": "vishal",
+      "age": "22",
+      "id": "5bTglNB"
     }
   ],
   "companies": [
